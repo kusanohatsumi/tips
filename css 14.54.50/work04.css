@@ -1,0 +1,210 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Std",sans;
+    width:100%; 
+    height:100%;
+}
+
+h1{
+    width:100%;
+    height:45px;
+    font-size:1.8rem;
+    color:#fff;
+    padding:10px;
+    background:#333;
+}
+
+.mainImg{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items:center;
+    font-size: 100px;
+    animation:20s change-color-anim linear infinite;
+}
+@keyframes change-color-anim{
+    0%,100%{
+        background-color: #8DE0E3;
+    }
+    16%{
+        background-color: #E3B28D;
+    }
+    32%{
+        background-color: #E38D8D;
+
+    }
+    48%{
+        background-color: #E3E38D;
+    }
+    64%{
+        background-color: #AE8DE3;
+
+    }
+    80%{
+        background-color: #E3DD8D;
+
+    }
+}
+
+.btnWrap{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+.btnWrap a{
+    text-decoration:none;
+    color:#fff;
+    width:60%;
+    height:50px;
+    line-height:50px;
+    display: block;
+}
+.btnBase{
+    width:50%;
+    height:450px;
+    background:#FF6347;
+    float: left;
+    position:relative;
+}
+.btnBase a{
+    width:60%;
+    height:100px;
+    line-height:100px;
+    outline:solid 2px #fff;
+
+    
+    margin:auto;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    transition:0.3s ease-in-out;
+}
+.btnBase a:hover{
+    background:#fff;
+    color:#FF6347;
+}
+.btnLink{
+    width:50%;
+    height:450px;
+    line-height: 450px;
+    background:#87CEEB;
+    float: left;
+    transition:0.4s ease-in-out;
+}
+.btnLink:hover{
+    background:#D687EB;
+}
+
+.btnLink a{
+    background:url("../img/03_icon_arrow.png") 120% center no-repeat;
+}
+.btnLink a:hover{
+    background:#D687EB;
+    color:#fff;
+    letter-spacing: 20px;
+    transition:0.4s ease-in-out;
+    background:url("../img/03_icon_arrow.png") 80% center no-repeat;
+}
+
+
+
+.cardcontents{
+    width:100%;
+    height:100%;
+    margin:20px 0 0;
+    /* border:solid 2px #333; */
+}
+
+h2{
+    outline: solid;
+}
+
+.cardWrap{
+    width:300px;
+    height:500px;
+    border:solid 1px #EFEFEF;
+    border-radius:10px;
+    transition:0.3s ease-in-out;
+    margin:30px;
+}
+.cardWrap:hover{
+    box-shadow:1px 1px 6px #909090;
+}
+
+
+
+.cardImgWrap {
+    width:100%;
+    height:180px;
+    background:url("../img/04_img_bk.png") left top/100% no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+img{
+    width:100%;
+    height:100%
+}
+
+.cardImgInnerWrap {
+width:80px;
+height:80px;
+margin:0 auto;
+/* position:relative; */
+top:120px;
+box-shadow:1px 1px 4px rgba(10,10,10,0.5);
+border-radius:100%;
+overflow:hidden
+}
+
+
+.cardWrap .cardInnerWrap {
+padding:20px;
+margin-top:20px
+}
+
+
+
+
+/* .cardWrap .cardInnerWrap .cardTtl {
+font-size:1.2rem;
+color:#333;
+font-weight:normal;
+text-align:center
+} */
+/* .cardWrap .cardInnerWrap .cardText {
+padding:20px 0
+}
+.cardWrap .cardInnerWrap .cardText p {
+font-size:1.2rem;
+line-height:1.8
+} */
+@-webkit-keyframes thumbAnime {
+0% {
+    transform:translateY(120px) scale(1)
+}
+80% {
+    transform:translateY(120px) scale(1.25)
+}
+100% {
+    transform:translateY(120px) scale(1.1)
+}
+}
+@keyframes thumbAnime {
+0% {
+    transform:translateY(120px) scale(1)
+}
+80% {
+    transform:translateY(120px) scale(1.25)
+}
+100% {
+    transform:translateY(120px) scale(1.1)
+}
+}

@@ -1,0 +1,48 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Std",sans;
+    width:100%; 
+    height:100%;
+    background: #F8F5F1;
+    height:2000px;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    /* 表示領域 */
+    width:100%;
+    height:650px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    overflow: scroll;
+
+    background:url(../img/backgroundImg.png) no-repeat center;
+}
+/* スクロールコンテンツ */
+.content{
+    min-width:450px;
+    min-height:450px;
+    margin: 100px 0;
+    text-align: center;
+    background:#fff;
+    border-radius: 50%;
+}
+.content--txt{
+    position:relative;
+    top:45%;
+}
+.content--txt h2{
+    margin-bottom:70px;
+}
+/* スクロールコンテンツ終わり */

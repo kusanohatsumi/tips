@@ -1,0 +1,44 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Ntd",sans;
+    width:100%; 
+    height:100%;
+}
+
+.wrapper{
+    height:100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;/* !! */
+}
+
+/* ↑↓の !! のところはセットで使う */
+
+.section{
+    scroll-snap-align: center;/* !! */
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:skyblue;
+    color:#fff;
+    font-size: 3rem;
+}
+
+.section:nth-child(2){
+    background:tomato;
+}
+.section:nth-child(3){
+    background:lightgreen;
+}
+.section:nth-child(4){
+    background:lightpink;
+}
+.section:nth-child(5){
+    background:plum;
+}

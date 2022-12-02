@@ -1,0 +1,150 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Maru Gothic Std",sans;
+    width:100%; 
+    height:100%;
+}
+ul{
+    list-style: none;
+}
+
+/* <floatを使ったやり方> */
+/* .index__nav{
+    list-style:none;
+    overflow:hidden;
+}
+.index__nav li{
+    width:200px;
+    text-align: center;
+    float:left;
+}
+.index__nav a{
+    text-decoration:none;
+} */
+
+
+
+/* .index__nav{
+    list-style:none;
+    overflow:hidden;
+    outline:solid 2px tomato;
+    width:1000px;
+    margin:0 auto;
+}
+.index__nav li{
+    width:200px;
+    text-align: center;
+    float:left;
+    outline:solid 2px tomato;
+}
+.index__nav a{
+    text-decoration:none;
+} */
+
+
+
+
+
+
+/* <flexを使ったやり方> */
+/* .index__nav{
+    list-style:none;
+    display:flex;
+    flex-flow:row;
+    justify-content:center;
+    margin:0 auto;
+}
+.index__nav a{
+    text-decoration:none;
+    display:block;
+} */
+
+
+
+
+.index__nav{
+    list-style:none;
+    display:flex;
+    flex-flow:row;
+    justify-content:center;
+    /* outline:solid 2px tomato; */
+    width:1000px;
+    margin:50px auto;
+    background:#333;
+}
+.index__nav a{
+    text-decoration:none;
+    display:block;
+    padding:10px 24px;
+    color:#fff;
+    /* outline:solid 2px tomato; */
+}
+.index__nav a:hover{
+    color:skyblue;
+}
+
+
+/* 2 */
+/* .head{
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#333;
+    margin:50px 0;
+} */
+.head{
+    width:100%;
+    height:50px;
+    background:#333;
+    display: flex;
+
+}
+/* .logo{
+    color:#fff;
+    padding:0 20px;
+    font-size:1.6rem;
+    flex-shrink: 0;
+} */
+.logo{
+    width:250px;
+    color:#fff;
+    font-size: 1.4rem;
+    flex-shrink: 0;/* 縮まないように */
+    border:solid 2px tomato;
+}
+
+.index__nav--items{
+    width:100%;    /* ロゴ以外のスペース */
+    height:100%;
+    border:solid 2px skyblue;
+}
+.index__nav--items ul{
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.index__nav--items li{
+    width:150px;
+    line-height: 50px;
+    border:solid 2px lightgreen;
+}
+.index__nav--items a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    flex-shrink: 2;
+}
+.index__nav--items a:visited,
+.index__nav--items a:link{
+    color:#fff;
+}
+
+
+
+

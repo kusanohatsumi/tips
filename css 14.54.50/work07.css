@@ -1,0 +1,249 @@
+@charset "UTF-8";
+html{
+    height:100%;
+    width:100%;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    width:100%;
+    height:100%;
+    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI",
+    "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    background: linear-gradient(
+        to left top,
+        #0d5be9,
+        #69ff8e
+    );
+}
+/* 
+1.CSSの記述順序
+2.共通設定
+3.固有設定->ページの上から設定
+*/
+a{
+    text-decoration: none;
+    color:#333;
+}
+ul{
+    list-style:none;
+}
+h2{
+    font-size: 3rem;
+}
+
+header{
+    width:100%;
+    height:130px;
+    display: flex;
+    background:#fff;
+    padding:20px;
+    outline:solid 2px tomato;
+}
+
+.logo{
+    flex-basis:200px;
+    height:100%;
+    font-size: 2.8rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    flex-shrink: 0;
+    padding:10px;
+    outline:solid 2px tomato;
+}
+nav{
+    flex-basis:100%;
+    height:100%;
+    outline:solid 2px tomato;
+    display: flex;
+    padding:20px 0;
+    font-weight:bold;
+}
+.nav{
+    width:100%;
+    height:100%;
+    outline:solid px skyblue;
+    display: flex;
+}
+.nav li{
+    flex-basis: 100%;
+    min-width: 67px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding:15px;
+}
+
+
+
+
+
+.inquiry{
+    font-size: 1.4rem;
+    min-width: 130px;
+    z-index: 2;
+}
+.inquiry a{
+    width:100%;
+    height:100%;
+    color:#fff;
+    display: block;
+    background:#61BBAD;
+    border-radius: 3px;
+    box-shadow: 0 3px #4b8f84;
+    transition: 0.3s ease-in-out;
+    padding:20px;
+}
+.inquiry a:hover{
+    background:#4b8f84;
+    border-radius: 3px;
+}
+/*  */
+
+.main__top{
+    width:100%;
+    height:600px;
+    text-align: center;
+    color: #fff;
+    background:
+    url(../img/07_main_overlay.png),
+    url(../img/07_main_image.jpg)left top/cover no-repeat;
+}
+.top__txt{
+    width:100%;
+    height:100%;
+    padding-top:150px;
+}
+.top__txt h2{
+    font-size: 5rem;
+}
+.top__txt p{
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+/* top ボタン */
+.button a{
+    display: block;
+    width:180px;
+    height:45px;
+    margin:40px auto 15px;
+    border:solid 1px #61BBAD;
+    color:#61BBAD;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1rem;
+    font-weight:bold;
+    transition: 0.2s ease-in-out;
+}
+.button a:hover{
+    background:#61BBAD;
+    color:#fff;
+}
+/*  */
+
+/* コンテナ */
+.container{
+    width:100%;
+    height:100%;
+    background:#fff;
+    margin:20px 0 0;
+}
+
+/* 要素のまとまり */
+.contents{
+    width:1000px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:0 auto;
+    padding:20px 0 0;
+    /* outline:solid 5px red; */
+}
+
+/* blog */
+.blog__ttl{
+    margin:20px 0;
+}
+
+/* 要素のアイテム */
+.blog__item{
+    display: flex;
+    justify-content: space-between;
+}
+.blog__item li{
+    width:320px;
+}
+.blog__item a:hover{
+    text-decoration: underline;
+}
+
+
+/* 要素の詳細 */
+.blog__detail{
+    width:320px;
+    height:100%;
+    font-size:1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blog__detail time{
+    font-weight: bold;
+    margin:10px 0;
+}
+.blog__detail figure{
+    order: -1;
+}
+.blog__detail img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+/*  */
+
+/* otherコンテンツ */
+/* コンテンツ */
+.other{
+    width:800px;
+    font-size: 1.2rem;
+}
+.other>section,aside{
+    width:100%;
+    margin:10px 0 40px;
+    padding:10px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents__ttl{
+    width:100%;
+    text-align: center;
+    padding:10px 0;
+}
+.other h3{
+    font-size: 1.6rem;
+    margin-bottom:10px;
+}
+.other p{
+    line-height: 2rem;
+}
+
+
+.desc dd{
+    margin-bottom: 20px;
+}
+.desc dt{
+    margin-top: 20px;
+}
+
+
+.copy{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+

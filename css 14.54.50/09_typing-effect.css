@@ -1,0 +1,42 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Ntd",sans-serif;
+    width:100%;
+    height:100%;
+}
+
+.wrapper{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo{
+    width:16vw;
+
+    animation:typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    /*
+    steps は ease-in-out などと同じプロパティ,()の中の数は文字数(空白含む)
+    */
+
+    white-space: nowrap;    /* 空白を折り返さない(=枠からはみ出す) */
+    overflow: hidden;       /* はみ出たものを非表示で隠す */
+    border-right:solid 2px #333;
+    font-size: 2rem;
+}
+@keyframes typing{
+    from{
+        width:0;
+    }
+}
+@keyframes blink{
+    50%{/* 効果のタイミング */
+        border-color: transparent;/* 透明にする */
+    }
+}

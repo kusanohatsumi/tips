@@ -1,0 +1,145 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Std",sans;
+    width:100%; 
+    height:1000px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:skyblue;
+}
+
+/* menuボタン */
+.index__menu{
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: skyblue;
+}
+.index__menu div{
+    width:40px;
+    height:5px;
+    background:#fff;
+    display: block;
+    position:relative;
+}
+.index__menu div::before{
+    content:"";
+    width:40px;
+    height:5px;
+    background:#fff;
+    display: block;
+    position:absolute;
+    top:-15px;
+}
+.index__menu div::after{
+    content:"";
+    width:40px;
+    height:5px;
+    background:#fff;
+    display: block;
+    position:absolute;
+    top:15px;
+}
+
+
+/* 閉じるボタン*/
+/* .index__menu--close{
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index__menu--close div{
+    width:40px;
+    height:5px;
+    display: block;
+    position:relative;
+}
+.index__menu--close div::before{
+    content:"";
+    width:50px;
+    height:5px;
+    background:skyblue;
+    display: block;
+    position:absolute;
+    transform: rotate(45deg);
+}
+.index__menu--close div::after{
+    content:"";
+    width:50px;
+    height:5px;
+    background:skyblue;
+    display: block;
+    position:absolute;
+    transform: rotate(135deg);
+} */
+
+#navAdd{
+    transform: translateX(0);
+}
+#navRemove {
+    transform: translateX(100%);
+}
+
+
+/* 各項目のデザイン設定 */
+.index__menu--contents{
+    width:400px;
+    outline:solid 1px skyblue;
+    position:fixed;
+    right:0;
+    background:#999;
+}
+.index__menu--items{
+    width:400px;
+    outline:solid 1px skyblue;
+    position:fixed;
+    right:0;
+    
+    width:300px;
+    height:100vh;
+    /* padding:20px 20px 0; */
+    text-align: center;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* aタグに設定 */
+.index__menu--items a{
+    height:30px;
+    line-height: 30px;
+    margin:10px 10px 30px;
+    border-bottom:solid 1px skyblue;
+    font-size: 1.4rem;
+    display: block;
+}
+.index__menu--items a:hover{
+    background:steelblue;
+    color:#fff;
+}
+
+
+
+
+

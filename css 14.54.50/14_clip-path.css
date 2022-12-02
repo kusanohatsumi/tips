@@ -1,0 +1,66 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Ntd",sans;
+    width:100%; 
+    height:100%;
+}
+
+
+.wrapper{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width:100vw;
+    padding:64px 10vw 0;
+    position:relative;
+}
+.header::before{
+    content:'';
+    display: block;
+    width:50%;
+    padding-top:50%;
+    clip-path: polygon(0 0, 100% 0, 0% 50%);
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    background:skyblue;
+
+    z-index: -1;
+}
+
+
+.clip-path{
+    display: inline-block;
+    width:280px;
+    height:280px;
+}
+
+.clip-path--polygon{
+    background:skyblue;
+    clip-path: polygon(0 0, 100% 0, 0% 50%);
+}
+
+.clip-path--ellipse{
+    background:tomato;
+
+    clip-path: ellipse(50% 50% at 50% 50%);
+    /* 中央で円形 */
+
+    /* clip-path: ellipse(50% 50% at 0% 0%); */
+    /* 左上で角丸 */
+
+    /* clip-path: ellipse(50% 50% at 100% 100%); */
+    /* 右下で角丸 */
+}
+

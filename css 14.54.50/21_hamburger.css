@@ -1,0 +1,84 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Ntd",sans;
+    width:100%; 
+    height:100%;
+}
+h1{
+    text-align: center;
+    margin-top:20px;
+}
+h2{
+    margin-bottom:20px;
+}
+
+.wrapper{
+    width:100%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    margin-left:20px;
+    /* outline:solid 2px skyblue; */
+}
+
+.hamburger-1{
+    width:60px;
+    height:60px;
+
+}
+.hamburger-1> span{
+    width:60px;
+    height:5px;
+    background-color: #333;
+    border-radius: 5px;
+    display:block;
+    position:relative;
+}
+.hamburger-1> span:nth-child(1){
+    bottom:10px;
+}
+.hamburger-1> span:nth-child(2){
+    top:0;
+}
+.hamburger-1> span:nth-child(3){
+    top:10px;
+}
+
+/*  */
+
+.hamburger-2{
+    width:60px;
+    height:5px;
+    background-color: #333;
+    border-radius: 5px;
+    display:block;
+    position: relative;
+}
+.hamburger-2::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height:100%;
+    background-color: #333;
+    border-radius: 5px;
+    position:absolute;
+    bottom:20px;
+}
+.hamburger-2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height:100%;
+    background-color: #333;
+    border-radius: 5px;
+    position:absolute;
+    top:20px;
+}

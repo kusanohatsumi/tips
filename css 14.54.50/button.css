@@ -1,0 +1,218 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size:1.6rem; 
+    font-family:"Hiragino Kaku Gothic Std",sans;
+    width:100%; 
+    height:100%;
+}
+.wrap{
+    width:1000px;
+    margin:0 auto;
+}
+h1{
+    width:100%;
+    height:50px;
+    background:#333;
+    color:#fff;
+}
+/* ボタン */
+.next a{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    width:300px;
+    height:80px;
+    background:skyblue;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50px;
+    margin:50px 0;
+    position:relative
+}
+.next a::before{
+    content:"";
+    display: block;
+    width:300px;
+    height:80px;
+    border: solid 2px #333;
+    border-radius:50px;
+    position: absolute;
+    bottom:7px;
+    right:7px;
+}
+/*  */
+
+.__button--back{
+    position: relative;
+}
+.__button--back a{
+    text-decoration: none;
+    display: block;
+    width:70px;
+    height:30px;
+    text-align:right;
+    line-height:30px;
+    margin:50px 0;
+    color:#623700;
+    /* border:solid 2px skyblue; */
+}
+.__button--back a::before{
+    content:"";
+    width:12px;
+    height:12px;
+    display: block;
+    position:absolute;
+    top:9px;
+    left:17px;
+    background:url(../img/backbutton\ 2.svg);
+    transition: 0.15s ease-in-out;
+}
+.__button--back a:hover::before{
+    left:10px;
+}
+/*  */
+
+
+
+
+
+
+.upload__button--next a{
+    width:300px;
+    height:85px;
+    /* margin: 0 auto; */
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:solid 2px #623700;
+    color:#623700;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.3s ;
+}
+.upload__button--next a::before{
+    content:"";
+    width:300px;
+    height:85px;
+    text-align: center;
+    background:#fff;
+    border-radius: 50px;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 0.3s ;
+    z-index: -1;
+}
+.upload__button--next a:hover::before{
+    background: #F39800;
+
+}
+.upload__button--next a:hover::before{
+    top:7px;
+    left:7px;
+}
+/*  */
+
+
+.button_3{
+    /* padding: 10px 25px; */
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 500; */
+    /* background: transparent; */
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease; */
+    position: relative;
+    width:300px;
+    /* display: inline-block; */
+    outline: solid 2px skyblue;
+    margin: 50px 0;
+}
+
+.button_3 a{
+    display: block;
+    width:300px;
+    height:85px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 85px;
+    z-index: 1;
+    color: #333;
+
+}
+
+.button_3 a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: skyblue;
+    transition: 0.3s ease;
+}
+
+.button_3 a:hover {
+color: #333;
+}
+
+.button_3 a:hover:after {
+left: 0;
+right: auto;
+width: 100%;
+}
+
+
+/* ボタン４ */
+.button_4{
+    width:300px;
+    height:70px;
+    position:relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border:solid 1px #623700;
+    transition: 0.1s ease-in-out;
+}
+.button_4 a{
+    display: block;
+    width:300px;
+    height:70px;
+    text-decoration: none;
+    text-align: center;
+    line-height:70px;
+    /* border:solid 2px skyblue; */
+    color:#623700;
+    transition: 0.42s ease-in-out;
+}
+.button_4 a::before{
+    content:"";
+    display: block;
+    background:#F39800;
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:-50px;
+    z-index:-1;
+    transition: 0.35s ease-in-out;
+    opacity: 0;
+}
+.button_4:hover{
+    border:solid 1px #F39800;
+}
+.button_4 a:hover{
+    color:#fff;
+    /* border:solid 1px #F39800; */
+
+}
+.button_4 a:hover::before{
+    top:-40px;
+    opacity: 100;
+}
