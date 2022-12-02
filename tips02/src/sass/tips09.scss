@@ -1,0 +1,36 @@
+@use "asset" as a;
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    grid-template-rows: 95vh;
+}
+.btnWrapper{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: scroll;
+    button{
+        width:150px;
+        height:50px;
+        border:solid 1px #333;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        transition: .3s ease;
+        &:hover{
+            background-color: lightseagreen;
+        }
+    }
+}
+.view{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border:solid 2px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block{
+        width:50px;
+        height:50px;
+        background-color: cornflowerblue;
+    }
+}

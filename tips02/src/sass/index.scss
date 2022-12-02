@@ -1,0 +1,13 @@
+@use "asset" as a;
+
+body{
+    padding: 20px;
+}
+p{
+    font-size: 2rem;
+    margin-bottom: 12px;
+    a{
+        text-decoration: none;
+        color:cornflowerblue;
+    }
+}

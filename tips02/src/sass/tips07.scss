@@ -1,0 +1,22 @@
+@use "asset" as a;
+
+body{
+    cursor: none;
+    // カーソルを消す
+}
+
+.stalker{
+    pointer-events: none;
+    display: block;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    position: fixed;
+    top:-16px;
+    left:-16px;
+    transform: translate(0,0);
+    transition: .1s ease;
+    background-color: rgba($color: orange, $alpha: 0.5);
+    // background-color: slateblue;
+    z-index: 999;
+}

@@ -1,0 +1,13 @@
+@mixin btnStyle($btnW:250px,$btnH:30px) {
+    width:$btnW;
+    height:$btnH;
+}
+
+@mixin border {
+    border: solid 1px #333;
+}
+
+@mixin heightCenter($height:70px) {
+    height:$height;
+    line-height: $height;
+}

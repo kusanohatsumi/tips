@@ -1,0 +1,41 @@
+@use "asset" as a;
+body{
+    padding: 0;
+}
+header{
+    width:100%;
+    @include a.heightCenter($height:70px);
+    padding: 0 20px;
+    background-color: #333;
+    h1{
+        color:#fff;
+    }
+}
+
+.firstView{
+    width:97%;
+    height:90vh;
+    background-color: aliceblue;
+    border:solid 1px #999;
+    border-left: none;
+    border-right: none;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .item{
+        width:800px;
+        height:450px;
+        margin-bottom: 36px;
+        background-color:whitesmoke;
+        opacity: 0;
+        transition: .3s ease;
+        &:first-child{
+            margin-top: 20px;
+        }
+    }
+}
